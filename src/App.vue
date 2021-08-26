@@ -13,6 +13,7 @@
       <van-cell title="单元格" value="内容" />
       <van-cell title="单元格" value="内容" label="描述信息" />
     </van-cell-group>
+    <div class="box">测试postcss</div>
     <router-view />
   </div>
 </template>
@@ -26,5 +27,12 @@ export default {
 <style scoped lang="less">
 .toutiao-yuedu {
   color: pink;
+}
+.box{
+  width: 200px;
+  height: 200px;
+  background: skyblue;
+  text-align: center;
+  line-height: 200px;
 }
 </style>
