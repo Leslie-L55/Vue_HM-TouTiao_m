@@ -2,7 +2,7 @@
   <div id="app">
     <h1 class="toutiao toutiao-dianzan2">黑马头条</h1>
     <i class="toutiao toutiao-yuedu"></i>
-    <hr>
+    <hr />
     <van-button type="default">默认按钮</van-button>
     <van-button type="primary">主要按钮</van-button>
     <van-button type="info">信息按钮</van-button>
@@ -19,8 +19,13 @@
 </template>
 
 <script>
+import { getJoke } from '@/api/news'
 export default {
-  name: 'App'
+  name: 'App',
+  async created () {
+    const res = await getJoke()
+    console.log(res)
+  }
 }
 </script>
 
@@ -28,7 +33,7 @@ export default {
 .toutiao-yuedu {
   color: pink;
 }
-.box{
+.box {
   width: 750px;
   height: 200px;
   background: skyblue;
