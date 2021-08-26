@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <h1>黑马头条</h1>
+    <h1 class="toutiao toutiao-dianzan2">黑马头条</h1>
+    <i class="toutiao toutiao-yuedu"></i>
     <router-view />
   </div>
 </template>
@@ -11,4 +12,8 @@ export default {
 }
 </script>
 
-<style scoped lang="less"></style>
+<style scoped lang="less">
+.toutiao-yuedu{
+  color: pink;
+}
+</style>
