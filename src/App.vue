@@ -29,7 +29,7 @@ export default {
   color: pink;
 }
 .box{
-  width: 200px;
+  width: 750px;
   height: 200px;
   background: skyblue;
   text-align: center;
